@@ -64,3 +64,14 @@ Warning: Permanently added '34.101.253.102' (ED25519) to the list of known hosts
 ```bash
 ssh nando@34.101.253.102
 ```
+### Cara Menyambungkan dengan github dengan server
+
+Kalian bisa pergi ke repo > setting > scroll kebawah sampai ke secret > action
+
+<img src="./.github/images/ss_1.png">
+
+Setelah itu buat `New repository secret`
+
+1. Buat lah secret `HOST` => atau di project ini bernama `SSH_HOST`, yang berisi ip address ```34.101.253.102```
+1. Buat lah secret `PRIVATE_KEY` => atau di project ini bernama `SSH_PRIVATE_KEY`, yang berisi konten dar file `id_rsa` di dalam file `~/.ssh/id_rsa`
+1. Buat lah secret `USER` => atau di project ini bernama `SSH_USER`, yang berisi username sesaui dengan user saat kalian bikin ssh ```nando```
