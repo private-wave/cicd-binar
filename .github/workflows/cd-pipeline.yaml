@@ -1,0 +1,25 @@
+name: CD Pipelines
+
+on:
+  push:
+    branches: [master] # jika ada merge di master, maka jalankan sebuah job dibawah ini
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy using ssh
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd ~/cicd-binar
+            docker-compose down
+            git pull origin master
+            git status
+            docker-compose up -d
+            # NODE_ENV=prod pm2 restart glints-backend --update-env // contoh pakai pm2

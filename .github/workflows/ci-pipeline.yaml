@@ -1,0 +1,21 @@
+name: CI Pipelines
+
+on:
+  pull_request:
+    branches: [master] # jika ada pull request menuju master, maka beberapa job dibawah ini jalan
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 16
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+      - run: yarn
+        working-directory: apps/profile_service
+
+      - run: yarn test
+        working-directory: apps/profile_service

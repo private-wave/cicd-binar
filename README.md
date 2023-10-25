@@ -75,3 +75,7 @@ Setelah itu buat `New repository secret`
 1. Buat lah secret `HOST` => atau di project ini bernama `SSH_HOST`, yang berisi ip address ```34.101.253.102```
 1. Buat lah secret `PRIVATE_KEY` => atau di project ini bernama `SSH_PRIVATE_KEY`, yang berisi konten dar file `id_rsa` di dalam file `~/.ssh/id_rsa`
 1. Buat lah secret `USER` => atau di project ini bernama `SSH_USER`, yang berisi username sesaui dengan user saat kalian bikin ssh ```nando```
+
+### Langkah CICD
+
+Dikarenakan kita disini pakai docker, docker-compose, maka kita perlu install docker dan docker di dalam os server kita
