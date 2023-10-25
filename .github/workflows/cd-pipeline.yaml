@@ -19,8 +19,8 @@ jobs:
           script: |
             cd ~/cicd-binar
             cd apps
-            docker-compose down
+            docker compose down
             git pull origin main
             git status
-            docker-compose up -d
+            docker compose up -d
             # NODE_ENV=prod pm2 restart glints-backend --update-env // contoh pakai pm2

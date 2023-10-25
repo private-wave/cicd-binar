@@ -1,4 +1,5 @@
-version: "3.3"
+version: "3.8"
+
 services:
   account_svc_1:
     build:
