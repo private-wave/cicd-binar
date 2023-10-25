@@ -5,7 +5,6 @@ disini adalah penjelasan tentang penggunaan web server khususnya nginx untuk men
 docker-compose adalah tool untuk menjalankan docker image secara bersamaan, installasi disini [link](https://docs.docker.com/compose/install/)
 
 
-
 ### SERVICE
 
 - ACCCOUNT SERVICE 1 (Diarahkan ke localhost/account) => Load balancer
