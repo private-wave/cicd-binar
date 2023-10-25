@@ -50,6 +50,17 @@ ssh -i ~/.ssh/id_rsa nando@34.101.253.102 # ssh -i ~/.ssh/id_<nama_ssh> <usernam
 
 Atau dengan cara langsung tanpa spesifik nama_ssh, jika kalian sudah mensetujui figerprint
 
+Contoh fingerprint:
+```bash
+ssh -i ~/.ssh/id_rsa nando@34.101.253.102
+
+The authenticity of host '34.101.253.102 (34.101.253.102)' can't be established.
+ED25519 key fingerprint is SHA256:01A8JWEb4SJxKiDwlNpyk8lbb6il8qaGZ1t0z7CWSpA.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '34.101.253.102' (ED25519) to the list of known hosts.
+```
+
 ```bash
 ssh nando@34.101.253.102
 ```
