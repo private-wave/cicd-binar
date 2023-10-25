@@ -2,7 +2,7 @@ name: CD Pipelines
 
 on:
   push:
-    branches: [master] # jika ada merge di master, maka jalankan sebuah job dibawah ini
+    branches: [main] # jika ada merge di master, maka jalankan sebuah job dibawah ini
 
 jobs:
   build:

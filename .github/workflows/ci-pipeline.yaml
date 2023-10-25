@@ -2,7 +2,7 @@ name: CI Pipelines
 
 on:
   pull_request:
-    branches: [master] # jika ada pull request menuju master, maka beberapa job dibawah ini jalan
+    branches: [main] # jika ada pull request menuju master, maka beberapa job dibawah ini jalan
 
 jobs:
   build:
