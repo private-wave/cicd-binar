@@ -18,6 +18,7 @@ jobs:
           port: 22
           script: |
             cd ~/cicd-binar
+            cd apps
             docker-compose down
             git pull origin master
             git status
